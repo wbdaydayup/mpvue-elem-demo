@@ -1,0 +1,9 @@
+<template name="cartcontrol$2516871e">
+  <view class="_div data-v-418585e8 cartcontrol">
+    <view class="_div data-v-418585e8 cart-decrease icon iconfont icon-jianhao {{[food.add ? 'icon-gery' : '']}}" wx:if="{{food.count && !selectAdd}}" data-id="{{food.id}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_div data-v-418585e8 cart-decrease icon iconfont icon-jianhao" wx:if="{{selectAdd}}" data-id="{{food.id}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+    <view class="_div data-v-418585e8 cart-count" wx:if="{{food.count && !selectAdd}}">{{food.count}}</view>
+    <view class="_div data-v-418585e8 cart-count" wx:else>{{nowCount}}</view>
+    <view class="_div data-v-418585e8 cart-add icon iconfont icon-jiahao" data-id="{{food.id}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>

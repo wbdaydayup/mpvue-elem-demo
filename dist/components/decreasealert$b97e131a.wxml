@@ -1,0 +1,5 @@
+<template name="decreasealert$b97e131a">
+  <view class="_div data-v-a1c0be64 alert-wrapper">
+    <view class="_div data-v-a1c0be64 alert-message">多规格商品请在购物车删除哦</view>
+  </view>
+</template>

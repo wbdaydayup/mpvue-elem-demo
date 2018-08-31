@@ -1,0 +1,48 @@
+<template name="index$51a96c27">
+  <view class="_div data-v-33b37240">
+    <view class="_div data-v-33b37240 top-wrapper">
+      <view class="_div data-v-33b37240 location">
+        <view class="_div data-v-33b37240 content">
+          <view class="_div data-v-33b37240 iconfont icon-locationfill"></view>
+          <view class="_div data-v-33b37240 font">德丰大楼</view>
+        </view>
+        <view class="_div data-v-33b37240 button">商</view>
+      </view>
+      <view class="_div data-v-33b37240 seach">
+        <view class="_div data-v-33b37240 iconfont icon-search"></view>
+        <view class="_div data-v-33b37240 font">搜索商品</view>
+      </view>
+    </view>
+    <view class="_div data-v-33b37240 list-wrapper">
+      <view class="_div data-v-33b37240 team">
+        <view class="_div data-v-33b37240 item" wx:if="{{index < 5}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-33b37240 iconfont icon-dan img"></view>
+          <view class="_div data-v-33b37240 font">{{item.name}}</view>
+        </view>
+      </view>
+      <view class="_div data-v-33b37240 team">
+        <view class="_div data-v-33b37240 item" wx:if="{{index > 4}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-33b37240 iconfont icon-dan img"></view>
+          <view class="_div data-v-33b37240 font">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-33b37240 swiper-wrapper">
+      <swiper class="_swiper data-v-33b37240 swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block index="{{index}}" wx:key="key" key="{{key}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
+          <swiper-item class="_swiper-item data-v-33b37240">
+            <image src="{{item}}" class="_image data-v-33b37240 slide-image" mode="aspectFill"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="_div data-v-33b37240 news-wrapper">
+      <view class="_div data-v-33b37240 item" wx:key="key" key="{{key}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.img}}" class="_img data-v-33b37240 img"></image>
+        <view class="_div data-v-33b37240 content">
+          <view class="_div data-v-33b37240 title">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

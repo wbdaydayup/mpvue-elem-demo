@@ -1,0 +1,37 @@
+<import src="cartcontrol$2516871e" />
+<template name="selectadd$a6c2b7fe">
+  <view class="_div data-v-b3c96a48">
+    <view class="_div data-v-b3c96a48 food-add">
+      <view class="_div data-v-b3c96a48 food-wrapper">
+        <view class="_div data-v-b3c96a48 food-item">
+          <view class="_div data-v-b3c96a48 icon">
+            <image class="_img data-v-b3c96a48 img" src="{{selectAdd.icon}}" style="width:109px;height:109px"></image>
+          </view>
+          <view class="_div data-v-b3c96a48 content">
+            <view class="_div data-v-b3c96a48 name">{{selectAdd.name}}</view>
+            <view class="_div data-v-b3c96a48 select-name">已选：{{selectItem.name}}</view>
+            <view class="_div data-v-b3c96a48 price">
+              <view class="_div data-v-b3c96a48 font1">￥</view>
+              <view class="_div data-v-b3c96a48 font2">{{selectPrice * nowCount}}</view>
+              <view class="_div data-v-b3c96a48 cartcontrol-wrapper">
+                <template bindadd="handleProxy" binddecrease="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="cartcontrol$2516871e"></template>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-b3c96a48 add">
+          <view class="_div data-v-b3c96a48 title">规格</view>
+          <view class="_div data-v-b3c96a48 add-wrapper">
+            <view class="_div data-v-b3c96a48 add-item {{[selectItem.id === item.id ? 'active' : '']}}" wx:key="item.id" key="{{item.id}}" data-id="{{item.id}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{selectAdd.add}}"
+              wx:for-index="index" wx:for-item="item">{{item.name}} </view>
+          </view>
+        </view>
+        <view class="_div data-v-b3c96a48 close" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-b3c96a48 icon iconfont icon-guanbi"></view>
+        </view>
+        <view class="_div data-v-b3c96a48 food-btn" bindtap="handleProxy" data-id="{{selectItem.id}}" data-eventid="{{'3'}}" data-comkey="{{$k}}">选好了</view>
+      </view>
+    </view>
+    <view class="_div data-v-b3c96a48 food-add-mask" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>

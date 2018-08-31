@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/goods/main",
+    "pages/counter/main",
+    "pages/index/main",
+    "pages/logs/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#49b152",
+    "navigationBarTitleText": "帮您优",
+    "navigationBarTextStyle": "white"
+  }
+}

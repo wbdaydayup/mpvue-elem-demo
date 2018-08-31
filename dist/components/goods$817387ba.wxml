@@ -1,0 +1,41 @@
+<import src="cartcontrol$2516871e" />
+<import src="decreasealert$b97e131a" />
+<import src="shopcart$e39e28a2" />
+<import src="shopcartlist$5ac7fe6f" />
+<import src="selectadd$a6c2b7fe" />
+<template name="goods$817387ba">
+  <view class="_div data-v-3f5a1f7e">
+    <view class="_div data-v-3f5a1f7e goods">
+      <scroll-view class="_scroll-view data-v-3f5a1f7e menu-wrapper" scroll-y scroll-into-view="{{toViewed}}" scroll-with-animation="true">
+        <view class="_div data-v-3f5a1f7e menu-item {{[currentIndex === index ? 'active' : '']}}" wx:key="item.id" key="{{item.id}}" id="{{item.id}}" wx:for="{{goods}}" wx:for-index="index" wx:for-item="item">
+          <text class="_text data-v-3f5a1f7e text" data-id="{{item.id}}" data-index="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">{{item.name}} </text>
+        </view>
+        <view class="_div data-v-3f5a1f7e ttttttt"></view>
+      </scroll-view>
+      <scroll-view class="_scroll-view data-v-3f5a1f7e foods-wrapper" scroll-y scroll-into-view="{{classifyViewed}}" scroll-with-animation="true" bindscroll="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view wx:key="good.id" key="{{good.id}}" id="{{good.id}}" class="_div data-v-3f5a1f7e food-list-hook" ref="list" wx:for="{{goods}}" wx:for-index="index" wx:for-item="good">
+          <text class="_text data-v-3f5a1f7e title">{{good.name}}</text>
+          <view wx:key="food.id" key="{{food.id}}" class="_div data-v-3f5a1f7e food-item border-1px" wx:for="{{good.foods}}" wx:for-index="foodindex" wx:for-item="food">
+            <view class="_div data-v-3f5a1f7e icon">
+              <image src="{{food.icon}}" mode="aspectFill" style="width:57px; height:57px;" class="_img data-v-3f5a1f7e"></image>
+            </view>
+            <view class="_div data-v-3f5a1f7e content">
+              <text class="_text data-v-3f5a1f7e name">{{food.name}}</text>
+              <text class="_text data-v-3f5a1f7e desc">{{food.description}}</text>
+              <view class="_div data-v-3f5a1f7e price">
+                <text class="_text data-v-3f5a1f7e">￥{{food.price}}</text>
+              </view>
+              <view class="_div data-v-3f5a1f7e cartcontrol-wrapper">
+                <template bindadd="handleProxy" binddecrease="handleProxy" data-eventid="{{'1-'+index+'-'+foodindex}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0-'+index+'-'+foodindex], $root}}" is="cartcontrol$2516871e"></template>
+              </view>
+              <template wx:if="{{food.show}}" data="{{...$root[$kk+'1-'+index+'-'+foodindex], $root}}" is="decreasealert$b97e131a"></template>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <template bindlist-show="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="shopcart$e39e28a2"></template>
+    <template wx:if="{{fold}}" bindlist-hide="handleProxy" bindadd-cart="handleProxy" binddecrease-cart="handleProxy" bindempty="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'3'], $root}}" is="shopcartlist$5ac7fe6f"></template>
+    <template wx:if="{{select}}" bindselect-hide="handleProxy" bindselect-food-add="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'4'], $root}}" is="selectadd$a6c2b7fe"></template>
+  </view>
+</template>

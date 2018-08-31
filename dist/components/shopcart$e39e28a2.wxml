@@ -1,0 +1,17 @@
+<template name="shopcart$e39e28a2">
+  <view class="_div data-v-22017a50 shopcart">
+    <view class="_div data-v-22017a50 content">
+      <view class="_div data-v-22017a50 content-left" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-22017a50 logo-wrapper">
+          <view class="_div data-v-22017a50 {{[totalCount > 0 ? 'logo-highlight' : 'logo']}}">
+            <view class="_div data-v-22017a50 icon iconfont icon-cart {{[totalCount > 0 ? 'icon-shopping_cart-highlight' : 'icon-shopping_cart']}}"></view>
+          </view>
+        </view>
+        <view class="_div data-v-22017a50 {{[totalCount > 0 ? 'price-highlight' : 'price']}}">￥{{totalPrice}}元</view>
+      </view>
+      <view class="_div data-v-22017a50 content-right">
+        <view class="_div data-v-22017a50 pay {{[totalPrice < minPrice ? 'not-enough' : 'enough']}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">{{payDesc}} </view>
+      </view>
+    </view>
+  </view>
+</template>

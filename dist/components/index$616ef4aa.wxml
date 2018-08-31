@@ -1,0 +1,6 @@
+<import src="goods$817387ba" />
+<template name="index$616ef4aa">
+  <view class="_div data-v-63c56064">
+    <template data="{{...$root[$kk+'0'], $root}}" is="goods$817387ba"></template>
+  </view>
+</template>

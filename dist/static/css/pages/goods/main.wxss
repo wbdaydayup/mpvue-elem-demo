@@ -1,0 +1,495 @@
+
+.goods.data-v-3f5a1f7e {
+  display: flex;
+  position: absolute;
+  top: 268rpx;
+  bottom: 92rpx;
+  width: 100%;
+  overflow: hidden;
+}
+.active.data-v-3f5a1f7e {
+  background: white;
+  font-weight: 700;
+}
+.menu-wrapper.data-v-3f5a1f7e {
+  flex: 0 0 160rpx;
+  width: 160rpx;
+  height: 100%;
+  background: #f3f5f7;
+}
+.menu-item.data-v-3f5a1f7e {
+  display: table;
+  height: 108rpx;
+  width: 112rpx;
+  line-height: 28rpx;
+  padding: 0 24rpx;
+}
+.menu-wrapper .text.data-v-3f5a1f7e {
+  display: table-cell;
+  width: 112rpx;
+  vertical-align: middle;
+  font-size: 24rpx;
+}
+.foods-wrapper.data-v-3f5a1f7e {
+  flex: 1;
+  height: 100%;
+}
+.foods-wrapper .title.data-v-3f5a1f7e {
+  display: block;
+  padding-left: 28rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  border-left: 4rpx solid #d9dde1;
+  font-size: 24rpx;
+  color: rgb(147, 153, 159);
+  background: #f3f6f7;
+}
+.foods-wrapper .food-item.data-v-3f5a1f7e {
+  display: flex;
+  margin: 36rpx;
+}
+.foods-wrapper .border-1px.data-v-3f5a1f7e:last-child:after {
+  display: none;
+}
+.foods-wrapper .icon.data-v-3f5a1f7e {
+  flex: 0 0 114rpx;
+  margin-right: 20rpx;
+}
+.foods-wrapper .content.data-v-3f5a1f7e {
+  position: relative;
+  flex: 1;
+}
+.foods-wrapper .name.data-v-3f5a1f7e {
+  display: block;
+  margin: 4rpx 0 16rpx 0;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+  color: rgb(7, 17, 27);
+}
+.foods-wrapper .desc.data-v-3f5a1f7e {
+  display: block;
+  margin-bottom: 16rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  color: rgb(147, 153, 159);
+}
+.foods-wrapper .price.data-v-3f5a1f7e {
+  font-weight: 700;
+  line-height: 48rpx;
+  margin-right: 16rpx;
+  font-size: 28rpx;
+  color: rgb(240, 20, 20);
+}
+.foods-wrapper .cartcontrol-wrapper.data-v-3f5a1f7e {
+  position: absolute;
+  right: 0;
+  bottom: -6rpx;
+}
+.shopcart.data-v-22017a50 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 96rpx;
+}
+.shopcart .content.data-v-22017a50 {
+  display: flex;
+  background: #141d27;
+  font-size: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+.shopcart .content .content-left.data-v-22017a50 {
+  flex: 1;
+}
+.logo-wrapper.data-v-22017a50 {
+  display: inline-block;
+  position: relative;
+  top: -20rpx;
+  margin: 0 24rpx;
+  padding: 12rpx;
+  width: 112rpx;
+  height: 112rpx;
+  box-sizing: border-box;
+  vertical-align: top;
+  border-radius: 50%;
+  background: #141d27;
+}
+.logo-wrapper .logo.data-v-22017a50 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  background: #2b343c;
+}
+.logo-wrapper .logo-highlight.data-v-22017a50 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(0, 160, 220);
+}
+.logo-wrapper .logo .icon-shopping_cart.data-v-22017a50 {
+  line-height: 88rpx;
+  font-size: 48rpx;
+  color: #80858a;
+}
+.logo-wrapper .logo .icon-shopping_cart-highlight.data-v-22017a50 {
+  line-height: 88rpx;
+  font-size: 48rpx;
+  color: #fff;
+}
+.logo-wrapper .logo-highlight .icon-shopping_cart.data-v-22017a50 {
+  line-height: 88rpx;
+  font-size: 48rpx;
+  color: #80858a;
+}
+.logo-wrapper .logo-highlight .icon-shopping_cart-highlight.data-v-22017a50 {
+  line-height: 88rpx;
+  font-size: 48rpx;
+  color: #fff;
+}
+.logo-wrapper .num.data-v-22017a50 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border-radius: 32rpx;
+  font-size: 18rpx;
+  font-weight: 700;
+  color: #fff;
+  background: rgb(240, 20, 20);
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.4);
+}
+.content-left .price.data-v-22017a50 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 24rpx;
+  line-height: 48rpx;
+  padding-right: 24rpx;
+  box-sizing: border-box;
+  border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.content-left .price-highlight.data-v-22017a50 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 24rpx;
+  line-height: 48rpx;
+  padding-right: 24rpx;
+  box-sizing: border-box;
+  border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #fff;
+}
+.content-left .desc.data-v-22017a50 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24rpx 0 0 24rpx;
+  line-height: 48rpx;
+  font-size: 20rpx;
+}
+.content-right.data-v-22017a50 {
+  flex: 0 0 210rpx;
+  width: 210rpx;
+}
+.content-right .pay.data-v-22017a50 {
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.content-right .not-enough.data-v-22017a50 {
+  background: #2b333b;
+}
+.content-right .enough.data-v-22017a50 {
+  background: #00b43c;
+  color: #fff;
+}@font-face {
+  font-family: 'iconfont';  /* project id 658916 */
+  src: url('//at.alicdn.com/t/font_658916_7e8nb2iey5x.eot');
+  src: url('//at.alicdn.com/t/font_658916_7e8nb2iey5x.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_658916_7e8nb2iey5x.woff') format('woff'),
+  url('//at.alicdn.com/t/font_658916_7e8nb2iey5x.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_658916_7e8nb2iey5x.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\E698";
+}
+
+.icon-check:before {
+  content: "\E655";
+}
+
+.icon-shouhuodizhi:before {
+  content: "\E64E";
+}
+
+.icon-xiangxiajiantou:before {
+  content: "\E65E";
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\E65F";
+}
+
+.icon-geren:before {
+  content: "\E657";
+}
+
+.icon-edit:before {
+  content: "\E606";
+}
+
+.icon-weixinzhifu:before {
+  content: "\E658";
+}
+
+.icon-guanbi:before {
+  content: "\E624";
+}
+
+.icon-jiahao:before {
+  content: "\E616";
+}
+
+.icon-jianhao:before {
+  content: "\E617";
+}
+
+.cartcontrol.data-v-418585e8 {
+  position: relative;
+  font-size: 0;
+  color: rgb(0, 160, 220);
+}
+.cartcontrol .cart-decrease.data-v-418585e8,
+.cart-add.data-v-418585e8 {
+  display: inline-block;
+  padding: 12rpx;
+  line-height: 48rpx;
+  font-size: 48rpx;
+  margin: 0;
+}
+.icon-gery.data-v-418585e8 {
+  color: rgb(147, 153, 159);
+}
+.alert-wrapper.data-v-418585e8 {
+  position: absolute;
+  right: 0;
+  bottom: 30rpx;
+}
+.alert-message.data-v-418585e8 {
+  padding: 14rpx;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  color: white;
+  text-align: center;
+}
+.cart-count.data-v-418585e8 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10rpx;
+  padding-top: 12rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: rgb(147, 153, 159);
+}
+.alert-wrapper.data-v-a1c0be64 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.alert-message.data-v-a1c0be64 {
+  padding: 14rpx;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  color: white;
+  text-align: center;
+}
+.food-add.data-v-b3c96a48 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 60;
+  width: 100%;
+  height: 830rpx;
+  background: white;
+}
+.food-add .food-wrapper.data-v-b3c96a48 {
+  padding: 30rpx;
+}
+.food-add .food-wrapper .food-item.data-v-b3c96a48 {
+  position: relative;
+  display: flex;
+}
+.food-add .food-wrapper .food-item .content.data-v-b3c96a48 {
+  margin-left: 30rpx;
+}
+.food-add .food-wrapper .food-item .content .name.data-v-b3c96a48 {
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.food-add .food-wrapper .food-item .content .select-name.data-v-b3c96a48 {
+  font-size: 24rpx;
+  margin-bottom: 60rpx;
+}
+.food-add .food-wrapper .food-item .content .price.data-v-b3c96a48 {
+  display: flex;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  color: rgb(233, 92, 75);
+}
+.food-add .food-wrapper .food-item .content .price .font1.data-v-b3c96a48 {
+  font-weight: 500;
+}
+.food-add .food-wrapper .food-item .content .price .font2.data-v-b3c96a48 {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: rgb(233, 92, 75);
+}
+.food-add .food-wrapper .food-item .content .price .cartcontrol-wrapper.data-v-b3c96a48 {
+  position: absolute;
+  right: 30rpx;
+}
+.food-add .food-wrapper .add .title.data-v-b3c96a48 {
+  font-size: 32rpx;
+  color: rgb(85, 85, 85);
+  margin: 40rpx 0;
+}
+.food-add .food-wrapper .add .add-wrapper.data-v-b3c96a48 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-add .food-wrapper .add .add-wrapper .add-item.data-v-b3c96a48 {
+  flex: 0 0 210rpx;
+  width: 210rpx;
+  height: 80rpx;
+  margin: 0 20rpx 20rpx 0;
+  font-size: 24rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  background: rgb(245, 245, 245);
+}
+.food-add .food-wrapper .add .add-wrapper .active.data-v-b3c96a48 {
+  color: rgb(45, 147, 222);
+  background: rgb(225, 241, 255);
+}
+.food-add .food-wrapper .close.data-v-b3c96a48 {
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+  padding: 12rpx;
+  color: rgb(177, 177, 177);
+}
+.food-add .food-wrapper .food-btn.data-v-b3c96a48 {
+  position: absolute;
+  bottom: 20rpx;
+  width: 92%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: white;
+  border-radius: 4rpx;
+  background: rgb(36, 149, 255);
+}
+.food-add .food-wrapper .icon .img.data-v-b3c96a48 {
+  border: 2rpx solid rgb(235, 235, 235);
+}
+.food-add-mask.data-v-b3c96a48 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+}
+.food-add .cartcontrol-wrapper.data-v-b3c96a48 {
+  position: absolute;
+  right: 0;
+  bottom: -6rpx;
+}
+.shopcart-list.data-v-5c3b7d90 {
+  position: absolute;
+  bottom: 92rpx;
+  width: 100%;
+  z-index: 45;
+}
+.list-header.data-v-5c3b7d90 {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 36rpx;
+  background: #f3f5f7;
+  border-bottom: 2rpx solid rgba(7, 17, 27, 0.1);
+}
+.list-header .title.data-v-5c3b7d90 {
+  float: left;
+  font-size: 28rpx;
+  color: rbg(7, 17, 27);
+}
+.list-header .empty.data-v-5c3b7d90 {
+  float: right;
+  font-size: 24rpx;
+  color: rgb(0, 160, 220);
+}
+.list-content.data-v-5c3b7d90 {
+  max-height: 434rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.list-content .food.data-v-5c3b7d90 {
+  position: relative;
+  padding: 24rpx 0;
+  margin: 0 36rpx;
+  box-sizing: border-box;
+}
+.list-content .name.data-v-5c3b7d90 {
+  line-height: 48rpx;
+  font-size: 28rpx;
+  color: rgb(7, 17, 27);
+}
+.list-content .price.data-v-5c3b7d90 {
+  position: absolute;
+  right: 220rpx;
+  bottom: 24rpx;
+  line-height: 48rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: rgb(240, 20, 20);
+}
+.shopcart-list .cartcontrol-wrapper.data-v-5c3b7d90 {
+  position: absolute;
+  right: 0;
+  bottom: 12rpx;
+}
+.list-mask.data-v-5c3b7d90 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  background: rgba(7, 17, 27, 0.6);
+  backdrop-filter: blur(20rpx);
+  -webkit-backdrop-filter: blur(20rpx);
+}

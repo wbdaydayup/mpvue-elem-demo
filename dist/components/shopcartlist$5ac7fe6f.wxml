@@ -1,0 +1,23 @@
+<import src="cartcontrol$2516871e" />
+<template name="shopcartlist$5ac7fe6f">
+  <view class="_div data-v-5c3b7d90">
+    <view class="_div data-v-5c3b7d90 shopcart-list">
+      <view class="_div data-v-5c3b7d90 list-header">
+        <text class="_text data-v-5c3b7d90 title">购物车</text>
+        <text class="_text data-v-5c3b7d90 empty" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">清空</text>
+      </view>
+      <scroll-view class="_scroll-view data-v-5c3b7d90 list-content" scroll-y>
+        <view class="_div data-v-5c3b7d90 food border-1px" wx:key="item.id" key="{{item.id}}" wx:for="{{selectFoods}}" wx:for-index="index" wx:for-item="item">
+          <text class="_text data-v-5c3b7d90 name">{{item.name}}</text>
+          <view class="_div data-v-5c3b7d90 price">
+            <text class="_text data-v-5c3b7d90">￥{{item.price*item.count}}</text>
+          </view>
+          <view class="_div data-v-5c3b7d90 cartcontrol-wrapper">
+            <template bindadd="handleProxy" binddecrease="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0-'+index], $root}}" is="cartcontrol$2516871e"></template>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="_div data-v-5c3b7d90 list-mask" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>
