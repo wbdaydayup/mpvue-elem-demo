@@ -1,4 +1,4 @@
-# fresh
+# mpvue-elem-demo
 
 > A Mpvue project
 
